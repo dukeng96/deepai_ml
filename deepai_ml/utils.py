@@ -538,7 +538,7 @@ def reduce_mem_usage(props):
     return props, NAlist
 
 
-    def print_score(m, X_train, y_train, X_valid, y_valid):
+def print_score(m, X_train, y_train, X_valid, y_valid):
     res = [mean_squared_error(m.predict(X_train), y_train), mean_squared_error(m.predict(X_valid), y_valid),
                 m.score(X_train, y_train), m.score(X_valid, y_valid)]
     if hasattr(m, 'oob_score_'): res.append(m.oob_score_)
