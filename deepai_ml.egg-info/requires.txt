@@ -1,9 +1,0 @@
-sklearn_pandas
-pandas
-numpy
-sklearn
-statsmodels
-mlxtend
-xgboost
-seaborn
-matplotlib
